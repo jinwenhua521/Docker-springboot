@@ -1,0 +1,40 @@
+server:
+  port: 9999
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: dev
+
+  thymeleaf:
+    cache: false
+
+  aop:
+    proxy-target-class: true
+
+logging:
+  level:
+    root: info
+    com.jwh: info
+  pattern:
+    console: '%p%m%n'
+
+mybatis-plus:
+  # mp 别名配置
+  #type-aliases-package: cc.mrbird.febs.system.entity,cc.mrbird.febs.generator.entity,cc.mrbird.febs.job.entity
+  # xml mapper文件扫描路径
+  mapper-locations: classpath:mapper/*/*.xml
+  configuration:
+    #map-underscore-to-camel-case: true
+    jdbc-type-for-null: null
+  global-config:
+    # 取消mybatisplus Banner图
+    banner: false
+    db-config:   #逻辑删除配置
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+
+
+

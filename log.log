@@ -1,0 +1,9 @@
+ Consume Time：7 ms 2019-11-26 16:03:58
+ Execute SQL：select 1
+
+ Consume Time：0 ms 2019-11-26 16:03:59
+ Execute SQL：select 1
+
+ Consume Time：4 ms 2019-11-26 16:03:59
+ Execute SQL：UPDATE user SET age=22, update_time='2019-11-26T16:03:59.772', version=5 WHERE id=1199169183888269313 AND version=4 AND deleted=0
+
