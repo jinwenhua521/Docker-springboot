@@ -31,7 +31,7 @@ public class AR {
 
     @org.junit.Test
     public void testSelect(){
-        MpConfiguration.myTableName.set("user_2019");
+        MpConfiguration.myTableName.set("user_20199");
         List<User> users = userMapper.mySelectList(Wrappers.<User>lambdaQuery().isNotNull(true,User::getAge));
         users.forEach(System.out::println);
     }
