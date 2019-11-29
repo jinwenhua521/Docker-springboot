@@ -17,5 +17,8 @@ public class JedisDome1 {
     @Test
     public void Test1(){
         System.out.println(redisUtil.get("a1"));
+        //System.out.println(redisUtil.hget("m1","username"));
+        System.out.println(redisUtil.hHasKey("m2", "username"));
+        System.out.println(redisUtil.keys("m2"));
     }
 }
